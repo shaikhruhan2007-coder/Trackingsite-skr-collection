@@ -1,108 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SKR Collection</title>
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
       background: #f5f5f5;
-    }header {
-  text-align: center;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+      text-align: center;
+    }
 
-header h1 {
-  margin: 0;
-}
+    header {
+      padding: 20px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
 
-header p {
-  color: gray;
-  font-size: 14px;
-}
+    h1 {
+      margin: 0;
+    }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
+    .subtitle {
+      color: gray;
+      font-size: 14px;
+    }
 
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
+    .container {
+      padding: 15px;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
 
-.price {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0;
-  color: #000;
-}
+    .price {
+      font-size: 20px;
+      margin: 10px 0;
+    }
 
-.btn {
-  display: inline-block;
-  padding: 10px 15px;
-  background: black;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 10px;
-}
+    button {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-.btn:hover {
-  background: #333;
-}
+    button:hover {
+      background: #333;
+    }
+  </style></head><body>  <header>
+    <h1>SKR Collection</h1>
+    <p class="subtitle">Best Watches & Accessories in Vadodara</p>
+  </header>  <div class="container"><div class="card">
+  <img src="https://via.placeholder.com/300x200" alt="Watch">
+  <h2>Premium Watch</h2>
+  <p class="price">₹999</p>
+  <a href="https://wa.me/91XXXXXXXXXX?text=I want Premium Watch" target="_blank">
+    <button>Order on WhatsApp</button>
+  </a>
+</div>
 
-footer {
-  text-align: center;
-  padding: 15px;
-  background: white;
-  margin-top: 20px;
-  font-size: 14px;
-}
+<div class="card">
+  <img src="https://via.placeholder.com/300x200" alt="Watch">
+  <h2>Luxury Watch</h2>
+  <p class="price">₹1499</p>
+  <a href="https://wa.me/918980764782?text=I want Luxury Watch" target="_blank">
+    <button>Order on WhatsApp</button>
+  </a>
+</div>
 
-  </style>
-</head>
-<body><header>
-  <h1>SKR Collection</h1>
-  <p>Best Watches & Accessories in Vadodara</p>
-</header><div class="container">  <!-- Product 1 -->  <div class="card">
-    <img src="https://via.placeholder.com/300" alt="Watch">
-    <h3>Premium Watch</h3>
-    <div class="price">₹999</div>
-    <a class="btn" href="https://wa.me/918980764782?text=I%20want%20to%20buy%20Premium%20Watch">Order on WhatsApp</a>
-  </div>  <!-- Product 2 -->  <div class="card">
-    <img src="https://via.placeholder.com/300" alt="Watch">
-    <h3>Luxury Watch</h3>
-    <div class="price">₹1499</div>
-    <a class="btn" href="https://wa.me/918980764782?text=I%20want%20to%20buy%20Luxury%20Watch">Order on WhatsApp</a>
-  </div>  <!-- Product 3 -->  <div class="card">
-    <img src="https://via.placeholder.com/300" alt="Watch">
-    <h3>Smart Watch</h3>
-    <div class="price">₹1999</div>
-    <a class="btn" href="https://wa.me/918980764782?text=I%20want%20to%20buy%20Smart%20Watch">Order on WhatsApp</a>
-  </div></div><footer>
-  <p>📞 8980764782</p>
-  <p>Vadodara, Gujarat</p>
-</footer></body>
+<div class="card">
+  <img src="https://via.placeholder.com/300x200" alt="Watch">
+  <h2>Smart Watch</h2>
+  <p class="price">₹1999</p>
+  <a href="https://wa.me/918980764782?text=I want Smart Watch" target="_blank">
+    <button>Order on WhatsApp</button>
+  </a>
+</div>
+
+  </div></body>
 </html>
