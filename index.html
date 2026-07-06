@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SKR Tracking</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKR Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
-<h1>📦 SKR Parcel Tracking</h1>
-<p>Enter your Tracking ID</p>
+    <!-- Header -->
+    <header>
+        <div class="logo">SKR</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Track</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-<input type="text" id="trackingId" placeholder="e.g. SKR123">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to SKR Services</h1>
+        <p>Fast & Reliable Parcel Tracking System</p>
+        <button onclick="scrollToTrack()">Track Parcel</button>
+    </section>
 
-<button onclick="trackParcel()">Track Parcel</button>
+    <!-- Tracking Section -->
+    <section id="track">
+        <h2>Track Your Parcel</h2>
+        <input type="text" id="trackingId" placeholder="Enter Tracking ID">
+        <button onclick="trackParcel()">Track</button>
+        <p id="result"></p>
+    </section>
 
-<div id="result"></div>
-  
-  <div id="timeline" style="display:none;">
-  <h3>Tracking Progress</h3>
-  <div id="statusBox"></div>
-  <div id="details"></div>
-  </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SKR Website. All Rights Reserved.</p>
+    </footer>
 
-</div>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
