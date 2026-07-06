@@ -39,6 +39,25 @@
         <p>© 2026 SKR Website. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSy....",
+    authDomain: "skr-website-8f01d.firebaseapp.com",
+    projectId: "skr-website-8f01d",
+    storageBucket: "skr-website-8f01d.appspot.com",
+    messagingSenderId: "1045783006278",
+    appId: "1:1045783006278:web:xxxx",
+    measurementId: "G-9HG527DRPG"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  console.log("Firebase Connected 🔥");
+    </script>
+    
 </body>
 </html>
