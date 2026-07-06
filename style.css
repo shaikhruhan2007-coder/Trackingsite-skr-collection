@@ -1,74 +1,100 @@
-body{
-margin:0;
-padding:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.container{
-background:#fff;
-padding:30px;
-width:350px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.3);
-text-align:center;
+body {
+    background: #f4f6f9;
 }
 
-h1{
-color:#1e3a8a;
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #111;
+    color: white;
 }
 
-input{
-width:90%;
-padding:12px;
-margin:15px 0;
-border:2px solid #ddd;
-border-radius:8px;
-font-size:16px;
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
 }
 
-button{
-width:95%;
-padding:12px;
-border:none;
-border-radius:8px;
-background:#2563eb;
-color:white;
-font-size:16px;
-cursor:pointer;
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
 }
 
-button:hover{
-background:#1d4ed8;
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
 }
 
-#result{
-margin-top:20px;
-font-size:18px;
-font-weight:bold;
-}
-#timeline{
-margin-top:20px;
-padding:15px;
-background:#f2f2f2;
-border-radius:10px;
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-#statusBox{
-font-size:18px;
-line-height:32px;
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
 }
-#details{
-margin-top:15px;
-padding:15px;
-background:white;
-border-radius:10px;
-text-align:left;
-font-size:16px;
-line-height:30px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+
+/* Tracking */
+#track {
+    text-align: center;
+    padding: 50px 20px;
 }
+
+#track input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 15px;
+}
+
+#track button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+        }
