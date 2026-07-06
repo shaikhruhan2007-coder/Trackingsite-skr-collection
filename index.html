@@ -1,36 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SKR Tracking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKR Tracking</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Track Your Parcel</h1>
+<div class="container">
+<h1>📦 SKR Parcel Tracking</h1>
+<p>Enter your Tracking ID</p>
 
-<input type="text" id="trackingId" placeholder="Enter Tracking ID">
-<button onclick="trackParcel()">Track</button>
+<input type="text" id="trackingId" placeholder="e.g. SKR123">
 
-<p id="result"></p>
+<button onclick="trackParcel()">Track Parcel</button>
 
-<script>
-function trackParcel() {
-  var id = document.getElementById("trackingId").value;
-  var result = document.getElementById("result");
+<div id="result"></div>
 
-  if (id === "SKR123") {
-    result.innerHTML = "📦 Status: Shipped";
-  } 
-  else if (id === "SKR456") {
-    result.innerHTML = "🚚 Status: Out for Delivery";
-  } 
-  else if (id === "SKR789") {
-    result.innerHTML = "✅ Status: Delivered";
-  } 
-  else {
-    result.innerHTML = "❌ Invalid Tracking ID";
-  }
-}
-</script>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
